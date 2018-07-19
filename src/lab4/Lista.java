@@ -1,4 +1,3 @@
-
 package lab4;
 
 public class Lista {
@@ -34,20 +33,15 @@ public class Lista {
     
     public void agregarAlInicio(){
         Nodo nuevo = new Nodo();
-        
-        
-    }
-    public void borrarAlPrincipio(){
-        
-    }
-    public void borrarAlFinal(){
-        
-    }
-    public void mostrarLista(){
-        
-    }
-    public void borrarLista(){
-        
+        //nuevo.setValor(valor);
+        if(esVacia()){
+            inicio = nuevo;
+        }
+        else{
+            nuevo.setSiguiente(inicio);
+            inicio = nuevo;
+        }
+        tamanio++;  
     }
    
 }
